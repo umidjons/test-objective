@@ -1,0 +1,18 @@
+### GET Get users
+
+GET http://localhost:3000/api/getUsers
+Accept: application/json
+
+### POST Create a new user
+
+POST http://localhost:3000/api/insertUser
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "bla_bla_2",
+  "name": "Some Guy",
+  "email": "some_guy@gmail.com",
+  "password": "123Qw+@cvb"
+}
+

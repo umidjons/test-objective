@@ -1,0 +1,32 @@
+{
+  "name": "test-objective",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-dev": "npx nodemon app.js",
+    "test": "NODE_ENV=test npx mocha \"./test/unit/**/*.test.js\" --exit",
+    "test-dev": "NODE_ENV=test npx mocha \"./test/unit/**/*.test.js\" -w",
+    "test-int": "NODE_ENV=test npx mocha \"./test/integration/**/*.test.js\" --exit",
+    "test-int-dev": "NODE_ENV=test npx mocha \"./test/integration/**/*.test.js\" -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "awilix": "^4.3.3",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "mongoose": "^5.12.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7",
+    "sinon": "^10.0.0"
+  }
+}
